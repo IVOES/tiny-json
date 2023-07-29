@@ -1,0 +1,14 @@
+examples/example-03-cpp.cpp:46:28: style: C-style pointer casting [cstyleCast]
+    const auto list_pool = (jsonParser*)pool;
+                           ^
+tiny-json.c:85:15: style: Variable 'spool.mem' is assigned a value that is never used. [unreadVariable]
+    spool.mem = mem;
+              ^
+tiny-json.c:86:15: style: Variable 'spool.qty' is assigned a value that is never used. [unreadVariable]
+    spool.qty = qty;
+              ^
+examples/example-03-cpp.cpp:68:0: style: The function 'parse' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
